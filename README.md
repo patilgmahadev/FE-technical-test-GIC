@@ -1,10 +1,6 @@
-# React Redux, Ag Grid, Material UI project
+# GIC FE Technical Test
 
-This is project for React Redux, Ag Grid, Material UI
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is project for React React-router Redux, Ag Grid, Material UI
 
 ## Available Scripts
 
@@ -33,11 +29,19 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# Result - Tabular list, add item using Ag Grid, Redux, Material UI and Formik
+# Screens
+## AG GRID Table list
 
 ![Screenshot](assets/ag-grid-table-list.png)
 
-![Screenshot](assets/formik-add-item.png)
+## Add employee
+![Screenshot](assets/add.png)
+
+## Edit Employee
+![Screenshot](assets/edit.png)
+
+## Delete Employee
+![Screenshot](assets/delete.png)
 
 # Unit Test cases
 ![Screenshot](assets/unit-tests.png)
