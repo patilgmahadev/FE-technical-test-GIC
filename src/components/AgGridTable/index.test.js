@@ -9,6 +9,14 @@ import { ROUTES } from "../../utility/constant";
 
 const mockHistoryPush = jest.fn();
 
+global.fetch = jest.fn(() =>
+  Promise.resolve({
+    json: () => Promise.resolve(
+      [{"first_name":"Henri","last_name":"Rodriguez","email":"Darrin_Rippin@gmail.com","number":"405-936-8560","gender":"Trans*Man","id":"1"}]
+    ),
+  })
+);
+
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
   useHistory: () => ({

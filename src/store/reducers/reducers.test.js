@@ -1,5 +1,10 @@
 import employeeReducer from "./employee";
-import { SAVE_EMPLOYEES, ADD_EMPLOYEE } from "../actions/employee";
+import {
+  SAVE_EMPLOYEES,
+  ADD_EMPLOYEE,
+  EDIT_EMPLOYEE,
+  DELETE_EMPLOYEE,
+} from "../actions/employee";
 
 describe("Reducer Test", () => {
   test("should return the initial state", () => {
@@ -19,5 +24,23 @@ describe("Reducer Test", () => {
         { type: ADD_EMPLOYEE, employee: {} }
       )
     ).toEqual({ employeeList: [{}] });
+  });
+
+  test("should update the employee", () => {
+    expect(
+      employeeReducer(
+        { employeeList: [{ id: 1 }] },
+        { type: EDIT_EMPLOYEE, employee: { id: 1 } }
+      )
+    ).toEqual({ employeeList: [{ id: 1 }] });
+  });
+
+  test("should delete the employee", () => {
+    expect(
+      employeeReducer(
+        { employeeList: [{ id: 1 }, { id: 2 }] },
+        { type: DELETE_EMPLOYEE, employeeId: 1 }
+      )
+    ).toEqual({ employeeList: [{ id: 2 }] });
   });
 });
