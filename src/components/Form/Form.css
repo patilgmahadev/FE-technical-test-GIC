@@ -1,0 +1,26 @@
+.item {
+    padding: 8px;
+}
+
+input[type="radio"] {
+    width: 40px;
+    transform: scale(1.5);
+}
+
+.cancel-button {
+    margin-left: 16px;
+}
+
+.error, .MuiFormHelperText-root  {
+    color: #f44336;
+}
+
+.label-div {
+    display: inline-block;
+    width: 100px;
+}
+
+.item-radio {
+    display: inline-block;
+    margin-left: 16px;
+}

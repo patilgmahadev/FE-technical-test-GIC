@@ -1,0 +1,9 @@
+.item {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    margin-top: 20%;
+}

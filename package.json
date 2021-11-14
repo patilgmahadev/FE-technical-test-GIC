@@ -1,0 +1,70 @@
+{
+  "name": "react-redux-ag-grid-material-ui",
+  "version": "0.1.0",
+  "author": "Mahadev Patil",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "ag-grid-community": "^26.1.0",
+    "ag-grid-react": "^26.1.0",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --silent",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "testMatch": [
+      "**/src/**/*.test.js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "coverageDirectory": "./coverage/",
+    "testTimeout": 100,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/",
+      "\\.(scss|sass|css)$": "identity-obj-proxy"
+    },
+    "resolver": null
+  },
+  "devDependencies": {
+    "redux-mock-store": "^1.5.4"
+  }
+}

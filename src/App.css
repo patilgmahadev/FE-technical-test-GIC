@@ -1,0 +1,11 @@
+.bodyContainer {
+  max-width: 1280px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  min-height: 977px;
+  background-color: #dde2eb;
+  padding: 0 16px;
+}
