@@ -100,7 +100,7 @@ function FormComponent({ location, noOfEmployees, actions: { addEmployee, editEm
                 </Grid>
               </FormControl>
             </Grid>
-            <Grid container className="item">
+            <Grid container className="item btn-alignment">
               <Button type="submit" variant="contained" color="primary">
                 <Typography variant="h6" gutterBottom component="div">
                   Submit

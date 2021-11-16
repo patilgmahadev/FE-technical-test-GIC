@@ -4,10 +4,12 @@ const phoneRegex = RegExp(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/);
 
 export default Yup.object({
   first_name: Yup.string()
-    .max(15, "Must be 15 characters or less")
+    .min(6, "Must be minimum 6 characters or more")
+    .max(10, "Must be maximum 10 characters or less")
     .required("This field is required"),
   last_name: Yup.string()
-    .max(20, "Must be 20 characters or less")
+    .min(6, "Must be minimum 6 characters or more")
+    .max(10, "Must be maximum 10 characters or less")
     .required("This field is required"),
   email: Yup.string()
     .email("Invalid email address")

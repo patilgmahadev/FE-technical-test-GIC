@@ -24,3 +24,8 @@ input[type="radio"] {
     display: inline-block;
     margin-left: 16px;
 }
+
+.btn-alignment {
+    align-items: end;
+    justify-content: end;
+}
